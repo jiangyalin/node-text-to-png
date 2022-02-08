@@ -72,7 +72,6 @@ const main = ({ text = '', mode = 'paragraph', vertical = false, width = 200, he
 		ctx.font = fontSize + 'px Arial'
 		ctx.fillStyle = 'rgba(0, 0, 0, 1)'
 		text.split('').forEach((font, index) => {
-			console.log('font', font)
 			ctx.fillText(font, 0, (index + 1) * lineHeight - 5)
 		})
 	}
