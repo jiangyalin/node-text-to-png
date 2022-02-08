@@ -1,0 +1,10 @@
+{
+  "name": "node-text-to-png",
+  "version": "1.0.1",
+  "description": "基于node的文本转png图片支持自动换行，竖排",
+  "main": "lib/index.js",
+  "dependencies": {
+    "canvas": "^2.9.0"
+  },
+  "license": "ISC"
+}
