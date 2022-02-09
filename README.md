@@ -10,6 +10,8 @@ npm install node-text-to-png
 ## Example
 
 ```
+const nodeTextToPng = require('node-text-to-png')
+
 const dataBuffer = nodeTextToPng({
     text: 'Hello World',
     mode: 'row',

@@ -1,6 +1,6 @@
 {
   "name": "node-text-to-png",
-  "version": "0.0.6",
+  "version": "0.0.8",
   "description": "基于node的文本转png图片支持自动换行，竖排",
   "main": "main.js",
   "dependencies": {
