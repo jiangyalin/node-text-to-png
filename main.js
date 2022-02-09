@@ -80,11 +80,8 @@ const main = ({ text = '', mode = 'paragraph', vertical = false, width = 200, he
 	const path = './test.png'
 	const base64 = data.replace(/^data:image\/\w+;base64,/, '')
 	const dataBuffer = new Buffer(base64, 'base64')
-	fs.writeFileSync(path, dataBuffer)
+	return dataBuffer
+	// fs.writeFileSync(path, dataBuffer)
 }
 
-main({
-	text: '1测试测试测试测试2测试测试测试测试测试测试3测试测试测试4测试测试测试测试测试测试测试5测试测试测试测试6',
-	mode: 'row',
-	vertical: true
-})
+module.exports = main
