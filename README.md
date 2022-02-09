@@ -19,7 +19,7 @@ const dataBuffer = nodeTextToPng({
 fs.writeFileSync('./test.png', dataBuffer)
 ```
 
-###  Attributes
+##  Attributes
 
 |参数       |说明         |类型            |可选值      |是否必填      |默认值     |
 | ---------|:----------:|:--------------:|:--------:|:--------:|:---------:|
