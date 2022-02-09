@@ -6,8 +6,8 @@ const fs = require('fs')
 * vertical 是否为竖排
 * */
 const main = ({ text = '', mode = 'paragraph', vertical = false, width = 200, height = 200 }) => {
-	const lineHeight = 30
-	const fontSize = 30
+	const lineHeight = 24
+	const fontSize = 24
 	const checkCanvas = createCanvas(width, height)
 	const checkCtx = checkCanvas.getContext('2d')
 	checkCtx.font = fontSize + 'px Arial'
