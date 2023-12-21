@@ -5,9 +5,17 @@ const fs = require('fs')
 /*
 * vertical 是否为竖排
 * */
-const main = ({ text = '', mode = 'paragraph', vertical = false, width = 200, height = 200 }) => {
-	const lineHeight = 24
-	const fontSize = 24
+const main = (
+	{
+		text = '',
+		fontSize = 24,
+		mode = 'paragraph',
+		vertical = false,
+		width = 200,
+		height = 200
+	}
+) => {
+	const lineHeight = fontSize * 1.2
 	const checkCanvas = createCanvas(width, height)
 	const checkCtx = checkCanvas.getContext('2d')
 	checkCtx.font = fontSize + 'px Arial'
@@ -80,8 +88,8 @@ const main = ({ text = '', mode = 'paragraph', vertical = false, width = 200, he
 	const path = './test.png'
 	const base64 = data.replace(/^data:image\/\w+;base64,/, '')
 	const dataBuffer = new Buffer(base64, 'base64')
-	return dataBuffer
 	// fs.writeFileSync(path, dataBuffer)
+	return dataBuffer
 }
 
 module.exports = main
